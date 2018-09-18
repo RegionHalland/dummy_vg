@@ -1,0 +1,70 @@
+/**
+ *  The following imports are manually copied from the component library.
+ *  It's probably a good idea to only add things that do not compile, like variables and mixins.
+ *. https://github.com/RegionHalland/styleguide/
+ *
+**/
+
+.jump-to-content {
+  display: block;
+  background: #fff;
+  position: absolute;
+  overflow: hidden;
+  text-align: center;
+  height: 0;
+}
+
+.jump-to-content:focus {
+  position: initial;
+  border: 4px solid #a7a7a7;
+  padding: 0.5rem;
+  height: auto;
+}
+
+.content-highlight {
+  -webkit-animation-name: content-hightlight-animation;
+       -o-animation-name: content-hightlight-animation;
+          animation-name: content-hightlight-animation;
+  -webkit-animation-duration: 1.5s;
+       -o-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+       -o-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+          animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  -webkit-animation-iteration-count: 1;
+       -o-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+@-webkit-keyframes content-hightlight-animation {
+  0% {
+    background: #6ca2d5;
+  }
+
+  100% {
+    background: none;
+  }
+}
+
+@-o-keyframes content-hightlight-animation {
+  0% {
+    background: #6ca2d5;
+  }
+
+  100% {
+    background: none;
+  }
+}
+
+@keyframes content-hightlight-animation {
+  0% {
+    background: #6ca2d5;
+  }
+
+  100% {
+    background: none;
+  }
+}
+
+
+/*# sourceMappingURL=main.css.map*/
