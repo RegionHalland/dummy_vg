@@ -11,317 +11,350 @@
 		<link rel='stylesheet' id='rh-components-css' href='http://styleguide.test/dist/css/main.min.css' type='text/css' media='all' />
 		<link rel='stylesheet' id='halland/main.css-css' href='http://vg.test/app/themes/halland/dist/styles/main.css' type='text/css' media='all' />
 	 -->
+	 <!--
 	<link rel='stylesheet' id='rh-components-css' href='css/main.min.css' type='text/css' media='all' />
 	<link rel='stylesheet' id='halland/main.css-css' href='css/main.css' type='text/css' media='all' />
+	-->
+	<link rel='stylesheet' id='rh-components-css'  href='https://regionhalland.github.io/styleguide/dist/css/main.min.css' type='text/css' media='all' />
+ 	<link rel='stylesheet' id='halland/main.css-css'  href='http://vardgivare.regionhalland.se/app/themes/halland/dist/styles/main.css' type='text/css' media='all' />
 
 </head>
 
 <body class="home page-template-default page page-id-5 app-data index-data singular-data page-data page-5-data page-valkommen-till-vardgivarwebben-data front-page-data">
+<div class="container mx-auto" style="box-shadow: 0px 0px 5px #888888;">
+	<!-- ******************** -->
+	<!-- Jump to content      -->
+	<!-- NOTE! Remember to keep using current blade file with jump to content when implementing -->
+	<!-- ******************** -->
 
-	<!-- ************** -->
-	<!-- Top navigation -->
-	<!-- NOTE! Class "breadcrumbs" only for hide in mobile. Change to another class later -->
-	<!-- ************** -->
-	<div class="col-12 flex content-stretch">
-		<div class="container mx-auto" style="width: 1120px;">
-			<div class="flex flex-wrap background-grey p1">
-				<div class="col-12 lg-col-6 breadcrumbs">
-					<div>&nbsp;</div>
-				</div>
-				<div class="col-12 lg-col-6">
-				<div class="flex flex-wrap background-grey p1 right">
-					<div>
-						<h6 class="regular ml2 mr2">Lyssna</h6>
-					</div>
-					<div>
-						<h6 class="regular ml2 mr2">E-tjänster</h6>
-					</div>
-					<div>
-						<h6 class="regular ml2 mr2">Översätt</h6>
-					</div>
-					<div>
-						<h6 class="regular ml2 mr2">Lättläst</h6>
-					</div>
-					<div>
-						<h6 class="regular ml2 mr2">Kontakt</h6>
-					</div>
-				</div>
+	<!-- ******************** -->
+	<!-- Cookie notice        -->
+	<!-- NOTE! Remember to keep using current blade file with cookie notice when implementing -->
+	<!-- ******************** -->
+
+	<header>
+		<!-- ************** -->
+		<!-- Top navigation -->
+		<!-- NOTE! Class "breadcrumbs" only for hide in mobile. Change to another class later -->
+		<!-- ************** -->
+		<nav class="container mx-auto pb1 pt0 pr5 small bredcrumbs" style="text-align: right; background-color: #F3F3F3; border-bottom: 1px solid lightgrey;">
+			<ul aria-label="Toppmenylänkar">
+				<li class="pl4" style="display:inline;"><a href="">Lyssna</a></li>
+				<li class="pl4" style="display:inline"><a href="">E-tjänster</a></li>
+				<li class="pl4" style="display:inline"><a href="">Översätt</a></li>
+				<li class="pl4" style="display:inline"><a href="">Lättläst</a></li>
+				<li class="pl4" style="display:inline"><a href="">Kontakt</a></li>
+			</ul>
+		</nav>
+		
+		<!-- ******************************** -->
+		<!-- Menu + logo-image + small search -->
+		<!-- NOTE. Not correct image. Just for test -->
+		<!-- NOTE. Meny + search must be defined -->
+		<!-- ******************************** -->
+
+		<nav class="container mx-auto flex content-stretch pl5 pr5 py2">
+			<div class="col-12 lg-col-4 left-align">
+				Meny
 			</div>
+			<div class="col-12 lg-col-4 center">
+				<a href="" aria-label="Direkt till förstasidan"><img src="img/HomeLogo.png" alt="Logotyp"></a>
 			</div>
-		</div>
-	</div>
-	
-	<!-- ******************************** -->
-	<!-- Menu + logo-image + small search -->
-	<!-- NOTE. Not correct image. Just for test -->
-	<!-- NOTE. Meny + search must be defined -->
-	<!-- ******************************** -->
-	<div class="col-12 flex content-stretch">
-		<div class="container mx-auto" style="width: 1120px;">
-			<div class="flex flex-wrap background-white p3">
-				<div class="col-12 lg-col-4 left-align">
-					<div class="breadcrumbs">Meny</div>
-				</div>
-				<div class="col-12 lg-col-4 center">
-					<div><img src="img/HomeLogo.png"></div>
-				</div>
-				<div class="col-12 lg-col-4 right-align">
-					<div class="breadcrumbs">Search</div>
-				</div>
+			<div class="col-12 lg-col-4 right-align">
+				Search
 			</div>
-		</div>
-	</div>
+		</nav>
+	</header>
 
 	<!-- *************** -->
 	<!-- Outer container -->
 	<!-- *************** -->
 	<div class="col-12 flex content-stretch">
-		<div class="container mx-auto" style="width: 1120px;">
+		<div class="container mx-auto">
 			
 			<!-- **************************** -->
 			<!-- Content with grey background -->
 			<!-- **************************** -->
-			<div class="relative background-grey">
+			<div class="relative background-dark-blue">
 				
 				<!-- **************** -->
 				<!-- Background image -->
 				<!-- **************** -->
+				<!--   Removed for now when we implement only limited functionality
 				<div class="absolute z0 col-12 background-grey">
-					<img src="img/himmel.jpg" width="100%">
+					<img src="img/himmel.jpg" style="width:100%" alt="">
 				</div>
-				
+				-->
 				<!-- *********************** -->
 				<!-- White box with headings -->
 				<!-- *********************** -->
-				<div class="container relative mx-auto p4 z1">
-					<div class="flex flex-wrap p3 background-white">
-						<div class="col-12 lg-col-4">
+				<nav class="container relative mx-auto pl5 pr5 pt4 pb4 z1">
+					<ul class="flex flex-wrap p3 background-white" aria-label="Huvudnavigation">
+						<li class="col-12 lg-col-4">
 							<div class="p3">
-								<div><h4>Medicinska områden</h4></div>
-								<div>Lorem ipsum dolar sit amet, consectur adipiscing, sed do eiusmod tempor incident,</div>
+								<span class="center strong">
+									<object tabindex="-1" class="pr1" type="image/svg+xml" data="img/icon-navlink.svg" style="vertical-align: middle;"></object>
+									<a href="" style="vertical-align: middle;">Medicinska områden</a>
+								</span>
+								<!--<div>Lorem ipsum dolar sit amet, consectur adipiscing, sed do eiusmod tempor incident,</div>-->
 							</div>
-						</div>
-						<div class="col-12 lg-col-4">
+						</li>
+						<li class="col-12 lg-col-4">
 							<div class="p3">
-								<div><h4>Behandlingsstöd</h4></div>
-								<div>Lorem ipsum dolar sit amet, consectur adipiscing, sed do eiusmod tempor incident,</div>
+								<span class="center strong">
+									<object tabindex="-1" class="pr1" type="image/svg+xml" data="img/icon-navlink.svg" style="vertical-align: middle;"></object>
+									<a href="" style="vertical-align: middle;">Behandlingsstöd</a>
+								</span>
+								<!--<div>Lorem ipsum dolar sit amet, consectur adipiscing, sed do eiusmod tempor incident,</div>-->
 							</div>
-						</div>
-						<div class="col-12 lg-col-4">
+						</li>
+						<li class="col-12 lg-col-4">
 							<div class="p3">
-								<div><h4>Patientadministration</h4></div>
-								<div>Lorem ipsum dolar sit amet, consectur adipiscing, sed do eiusmod tempor incident,</div>
+								<span class="center strong">
+									<object tabindex="-1" class="pr1" type="image/svg+xml" data="img/icon-navlink.svg" style="vertical-align: middle;"></object>
+									<a href="" style="vertical-align: middle;">Patientadministration</a>
+								</span>
+								<!--<div>Lorem ipsum dolar sit amet, consectur adipiscing, sed do eiusmod tempor incident,</div>-->
 							</div>
-						</div>
-						<div class="col-12 lg-col-4">
+						</li>
+						<li class="col-12 lg-col-4">
 							<div class="p3">
-								<div><h4>Utveckling och forskning</h4></div>
-								<div>Lorem ipsum dolar sit amet, consectur adipiscing, sed do eiusmod tempor incident,</div>
+								<span class="center strong">
+									<object tabindex="-1" class="pr1" type="image/svg+xml" data="img/icon-navlink.svg" style="vertical-align: middle;"></object>
+									<a href="" style="vertical-align: middle;">Utveckling och forskning</a>
+								</span>
+								<!--<div>Lorem ipsum dolar sit amet, consectur adipiscing, sed do eiusmod tempor incident,</div>-->
 							</div>
-						</div>
-						<div class="col-12 lg-col-4">
+						</li>
+						<li class="col-12 lg-col-4">
 							<div class="p3">
-								<div><h4>Uppdrag och samverkan</h4></div>
-								<div>Lorem ipsum dolar sit amet, consectur adipiscing, sed do eiusmod tempor incident,</div>
+								<span class="center strong">
+									<object tabindex="-1" class="pr1" type="image/svg+xml" data="img/icon-navlink.svg" style="vertical-align: middle;"></object>
+									<a href="" style="vertical-align: middle;">Uppdrag och samverkan</a>
+								</span>
+								<!--<div>Lorem ipsum dolar sit amet, consectur adipiscing, sed do eiusmod tempor incident,</div>-->
 							</div>
-						</div>
-						<div class="col-12 lg-col-4">
+						</li>
+						<li class="col-12 lg-col-4">
 							<div class="p3">
-								<div><h4>Service och IT</h4></div>
-								<div>Lorem ipsum dolar sit amet, consectur adipiscing, sed do eiusmod tempor incident,</div>
+								<span class="center strong">
+									<object tabindex="-1" class="pr1" type="image/svg+xml" data="img/icon-navlink.svg" style="vertical-align: middle;"></object>
+									<a href="" style="vertical-align: middle;">Service och IT</a>
+								</span>
+								<!--<div>Lorem ipsum dolar sit amet, consectur adipiscing, sed do eiusmod tempor incident,</div>-->
 							</div>
-						</div>
-					</div>
-				</div>
+						</li>
+					</ul>
+				</nav>
 				
 				<!-- *********************** -->
 				<!-- 9 blue boxex with links -->
 				<!-- *********************** -->
+				<!-- Removed for this sprint 
 				<div class="container mx-auto pl4 pb4 pr4 pt0">
 					<div class="flex flex-wrap p3">
 						<div class="col-12 lg-col-4">
 							<div class="p3">
 								<div class="center mb2"><h4>Mina genvägar</h4></div>
-								<div class="center background-dark-blue border-radius p1 mb2"><h4 class="regular text-white">Genväg 1</h5></div>
-								<div class="center background-dark-blue border-radius p1 mb2"><h4 class="regular text-white">Genväg 2</h5></div>
-								<div class="center background-dark-blue border-radius p1 mb2"><h4 class="regular text-white">Genväg 3</h5></div>
+								<div class="center background-dark-blue border-radius p1 mb2"><h4 class="regular text-white">Genväg 1</h4></div>
+								<div class="center background-dark-blue border-radius p1 mb2"><h4 class="regular text-white">Genväg 2</h4></div>
+								<div class="center background-dark-blue border-radius p1 mb2"><h4 class="regular text-white">Genväg 3</h4></div>
 							</div>
 						</div>
 						<div class="col-12 lg-col-4">
 							<div class="p3">
 								<div class="center mb2"><h4>Populära sidor</h4></div>
-								<div class="center background-dark-blue border-radius p1 mb2"><h4 class="regular text-white">Populär sida 1</h5></div>
-								<div class="center background-dark-blue border-radius p1 mb2"><h4 class="regular text-white">Populär sida 2</h5></div>
-								<div class="center background-dark-blue border-radius p1 mb2"><h4 class="regular text-white">Populär sida 3</h5></div>
+								<div class="center background-dark-blue border-radius p1 mb2"><h4 class="regular text-white">Populär sida 1</h4></div>
+								<div class="center background-dark-blue border-radius p1 mb2"><h4 class="regular text-white">Populär sida 2</h4></div>
+								<div class="center background-dark-blue border-radius p1 mb2"><h4 class="regular text-white">Populär sida 3</h4></div>
 							</div>
 						</div>
 						<div class="col-12 lg-col-4">
 							<div class="p3">
-								<div class="center mb2"><h4>Dina senaste besökta sidor</h4></div>
-								<div class="center background-dark-blue border-radius p1 mb2"><h4 class="regular text-white">Senast besökt 1</h5></div>
-								<div class="center background-dark-blue border-radius p1 mb2"><h4 class="regular text-white">Senast besökt 2</h5></div>
-								<div class="center background-dark-blue border-radius p1 mb2"><h4 class="regular text-white">Senast besökt 3</h5></div>
+								<div class="center mb2"><h4>Senast besökta sidorna</h4></div>
+								<div class="center background-dark-blue border-radius p1 mb2"><h4 class="regular text-white">Senast besökt 1</h4></div>
+								<div class="center background-dark-blue border-radius p1 mb2"><h4 class="regular text-white">Senast besökt 2</h4></div>
+								<div class="center background-dark-blue border-radius p1 mb2"><h4 class="regular text-white">Senast besökt 3</h4></div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+			-->
 			
 			<!-- ******************* -->
 			<!-- News + editor boxes -->
 			<!-- ******************* -->
-			<div class="background-white">
-				<div class="container mx-auto p4">
-					<div class="m2"><h1>Nyheter</h1></div>
-					<div class="mt2 ml2 mr2 mb4">Prenumerera på RSS</div>
+			<main class="background-white">
+				<div class="container mx-auto pl5 pr5 pt4 pb4">
+					<div class="m2">
+						<h1 id="223344">Nyheter</h1>
+					</div>
+					<div class="mt2 ml2 mr2 mb4">
+						<a href="" style="text-decoration: underline;">Prenumerera på RSS</a>
+					</div>     <!--   Look in current blade file for correct way to fetch link --> 
 					
 					<!-- **** -->
 					<!-- News -->
 					<!-- **** -->
 					<div class="m2 flex flex-wrap">
-						<div class="col-12 lg-col-5">
-							<div class="mr4 mb2">
-								<div class="mb1"><h4>Tre nya SVF inom Cancervården den 1 april</h4></div>
-								<div class="mb2"><h6 class="regular">Publicerad 6:e augusti 2018</h6></div>
-								<div class="mb3"><h5 class="regular">Proin euismod libero ex, sit amet lacinia lorem viverra sed. Mauris vehicula eros ultricies tellus placerat, vel vehicula lectus commodo. Pellentesque nibh risus, bibendum eget mattis eu.</h5></div>
-							</div>
-							<div class="mr4 mb2">
-								<div class="mb1"><h4>Satsning på 21 miljoner ska göra vården digital</h4></div>
-								<div class="mb2"><h6 class="regular">Publicerad 12:e augusti 2018</h6></div>
-								<div class="mb3"><h5 class="regular">Proin euismod libero ex, sit amet lacinia lorem viverra sed. Mauris vehicula eros ultricies tellus placerat, vel vehicula lectus commodo. Pellentesque nibh risus, bibendum eget mattis eu.</h5></div>
-							</div>
-							<div class="mr4 mb3">
-								<div class="mb1"><h4>Nu invigs nya BUP-mottagningen i Halmstad</h4></div>
-								<div class="mb2"><h6 class="regular">Publicerad 1:a september 2018</h6></div>
-								<div class="mb3"><h5 class="regular">Proin euismod libero ex, sit amet lacinia lorem viverra sed. Mauris vehicula eros ultricies tellus placerat, vel vehicula lectus commodo. Pellentesque nibh risus, bibendum eget mattis eu.</h5></div>
-							</div>
-						</div>
+						<ul class="col-12 lg-col-5" aria-labelledby="223344">
+							<li class="mr4 mb3" style="border-bottom: 1px solid lightgrey">  
+								<div class="pl3 mb3" style="border-left: 4px solid #004B93;">
+									<div class="mb1"><h2 class="h4"><a href="">Tre nya SVF inom Cancervården den 1 april</a></h2></div>
+									<div class="mb2 small">Publicerad <time datetime="2018-08-06">6 augusti 2018</time></div>
+									<div class="mb3">Proin euismod libero ex, sit amet lacinia lorem viverra sed. Mauris vehicula eros ultricies tellus placerat, vel vehicula lectus commodo. Pellentesque nibh risus, bibendum eget mattis eu.</div>
+								</div>
+							</li>
+							<li class="mr4 mb3" style="border-bottom: 1px solid lightgrey">  
+								<div class="pl3 mb3" style="border-left: 4px solid #CEE2F2;">
+									<div class="mb1"><h2 class="h4"><a href="">Satsning på 21 miljoner ska göra vården digital</a></h2></div>
+									<div class="mb2 small">Publicerad <time datetime="2018-08-12">12 augusti 2018</time></div>
+									<div class="mb3">Proin euismod libero ex, sit amet lacinia lorem viverra sed. Mauris vehicula eros ultricies tellus placerat, vel vehicula lectus commodo. Pellentesque nibh risus, bibendum eget mattis eu.</div>
+								</div>
+							</li>
+							<li class="mr4 mb3" style="border-bottom: 1px solid lightgrey">
+								<div class="pl3 mb3" style="border-left: 4px solid #004B93;">
+									<div class="mb1"><h2 class="h4"><a href="">Nu invigs nya BUP-mottagningen i Halmstad</a></h2></div>
+									<div class="mb2 small">Publicerad <time datetime="2018-09-01">1 september 2018</time></div>
+									<div class="mb3">Proin euismod libero ex, sit amet lacinia lorem viverra sed. Mauris vehicula eros ultricies tellus placerat, vel vehicula lectus commodo. Pellentesque nibh risus, bibendum eget mattis eu.</div>
+								</div>
+							</li>
+						</ul>
 						
 						<!-- ************ -->
 						<!-- Editor boxes -->
 						<!-- ************ -->
-						<div class="col-12 lg-col-7">
-							<div class="flex flex-wrap">
-								<div class="col-12 lg-col-6">
-									<div class="pb3 pl3 pr3 pt0">
-										<div class="pb3">
-											<img src="img/th.jpg" width="100%">
-										</div>
-										<div class="center pb2">
-											<h4>Lediga jobb</h4>
-										</div>
-										<div class="pb3">
-											<h6 class="regular">Nullam pulvinar faucibus odio, eget porttitor mauris lobortis in. Aliquam egestas ultrices ligula.</h6>
-										</div>
+						<ul class="col-12 lg-col-7 flex flex-wrap" aria-labelledby="223344">
+							<li class="col-12 lg-col-6">
+								<div class="mb4 ml3 mr3 pt0" style="border-bottom: 4px solid #004B93; box-shadow: 0px 0px 5px #888888;">
+									<div class="pb3">
+										<img src="img/th.jpg" style="width:100%" alt="Platshållarbild">
+									</div>
+									<div class="center pb2">
+										<h2 class="h4"><a href="">Lediga jobb</a></h2>
+									</div>
+									<div class="pb3 pl3 pr3">
+										Nullam pulvinar faucibus odio, eget porttitor mauris lobortis in. Aliquam egestas ultrices ligula.
 									</div>
 								</div>
-								<div class="col-12 lg-col-6">
-									<div class="pb3 pl3 pr3 pt0">
-										<div class="pb3">
-											<img src="img/th.jpg" width="100%">
-										</div>
-										<div class="center pb2">
-											<h4>Flytta hit</h4>
-										</div>
-										<div class="pb3">
-											<h6 class="regular">Nullam pulvinar faucibus odio, eget porttitor mauris lobortis in. Aliquam egestas ultrices ligula.</h6>
-										</div>
-									</div>								
-								</div>
-							</div>
-							<div class="flex flex-wrap">
-								<div class="col-12 lg-col-6">
-									<div class="pb3 pl3 pr3 pt0">
-										<div class="pb3">
-											<img src="img/th.jpg" width="100%">
-										</div>
-										<div class="center pb2">
-											<h4>Ansökan och antagning</h4>
-										</div>
-										<div class="pb3">
-											<h6 class="regular">Nullam pulvinar faucibus odio, eget porttitor mauris lobortis in. Aliquam egestas ultrices ligula.</h6>
-										</div>
+							</li>
+							<li class="col-12 lg-col-6">
+								<div class="mb4 ml3 mr3 pt0" style="border-bottom: 4px solid #004B93; box-shadow: 0px 0px 5px #888888;">
+									<div class="pb3">
+										<img src="img/th.jpg" style="width:100%" alt="Platshållarbild">
+									</div>
+									<div class="center pb2">
+										<h2 class="h4"><a href="">Flytta hit</a></h2>
+									</div>
+									<div class="pb3 pl3 pr3">
+										Nullam pulvinar faucibus odio, eget porttitor mauris lobortis in. Aliquam egestas ultrices ligula.
+									</div>
+								</div>								
+							</li>	
+							<li class="col-12 lg-col-6">
+								<div class="mb4 ml3 mr3 pt0" style="border-bottom: 4px solid #004B93; box-shadow: 0px 0px 5px #888888;">
+									<div class="pb3">
+										<img src="img/th.jpg" style="width:100%" alt="Platshållarbild">
+									</div>
+									<div class="center pb2">
+										<h2 class="h4"><a href="">Ansökan och antagning</a></h2>
+									</div>
+									<div class="pb3 pl3 pr3">
+										Nullam pulvinar faucibus odio, eget porttitor mauris lobortis in. Aliquam egestas ultrices ligula.
 									</div>
 								</div>
-								<div class="col-12 lg-col-6">
-									<div class="pb3 pl3 pr3 pt0">
-										<div class="pb3">
-											<img src="img/th.jpg" width="100%">
-										</div>
-										<div class="center pb2">
-											<h4>Nu gör vi det enklare för dig</h4>
-										</div>
-										<div class="pb3">
-											<h6 class="regular">Nullam pulvinar faucibus odio, eget porttitor mauris lobortis in. Aliquam egestas ultrices ligula.</h6>
-										</div>
-									</div>								
-								</div>
-							</div>
-						</div>
+							</li>
+							<li class="col-12 lg-col-6">
+								<div class="mb4 ml3 mr3 pt0" style="border-bottom: 4px solid #004B93; box-shadow: 0px 0px 5px #888888;">
+									<div class="pb3">
+										<img src="img/th.jpg" style="width:100%" alt="Platshållarbild">
+									</div>
+									<div class="center pb2">
+										<h2 class="h4"><a href="">Nu gör vi det enklare för dig</a></h2>
+									</div>
+									<div class="pb3 pl3 pr3">
+										Nullam pulvinar faucibus odio, eget porttitor mauris lobortis in. Aliquam egestas ultrices ligula. 
+									</div>
+								</div>								
+							</li>
+						</ul>
 					</div>
-					<div class="m2">Gå till Nyhetsarkiv</div>
+					<span class="m2">
+						<a class="small" href="" style="vertical-align: middle; text-decoration: underline;">Gå till nyhetsarkiv</a>
+						<object tabindex="-1" class="pl2" type="image/svg+xml" data="img/icon-navlink.svg" style="vertical-align: middle;"></object>
+					</span>
 				</div>
-			</div>
+			</main>
 
 			<!-- ****** -->
 			<!-- Footer -->
 			<!-- ****** -->
-			<div class="background-grey">
-				<div class="container mx-auto p4">
+			<footer style="background-color: #FAFAFA; border-top: 1px solid lightgrey;"><!-- Add .background-light-grey to styleguide with correct color -->
+				<div class="container mx-auto pl5 pr5 pt4 pb2">
 					<div class="m2 flex flex-wrap">
-						<div class="col-12 lg-col-3">
-							<div class="m0 md-m4 lg-m6">
-								<div class="mb2"><h4>Vårdgivare i Halland</h4></div>
-								<div class="mb1"><h5 class="regular">Medicinska områden</h5></div>
-								<div class="mb1"><h5 class="regular">Behandlingsstöd</h5></div>
-								<div class="mb1"><h5 class="regular">Patientadministration</h5></div>
-								<div class="mb1"><h5 class="regular">Utveckling och Forskning</h5></div>
-								<div class="mb1"><h5 class="regular">Uppdrag och Samverkan</h5></div>
-								<div class="mb1"><h5 class="regular">Service och IT</h5></div>
+						<div class="col-12 md-col-6 lg-col-3 pb2">
+							<div class="mb3">
+								<div class="mb4">
+									<strong class="h4" id="111222">Vårdgivare i Halland</strong>
+								</div>
+								<ul class="small" aria-labelledby="111222">
+									<li class="mb1"><a href="">Medicinska områden</a></li>
+									<li class="mb1"><a href="">Behandlingsstöd</a></li>
+									<li class="mb1"><a href="">Patientadministration</a></li>
+									<li class="mb1"><a href="">Utveckling och Forskning</a></li>
+									<li class="mb1"><a href="">Uppdrag och Samverkan</a></li>
+									<li class="mb1"><a href="">Service och IT</a></li>
+								</ul>
 							</div>
 						</div>
-						<div class="col-12 lg-col-3">
+						<div class="col-12 md-col-6 lg-col-3 pb2">
 							<div class="mb3">
-								<div class="mb2"><h4>Kontakt</h4></div>
-								<div class="mb1"><h5 class="regular">Telefon: 035-13 48 00</h5></div>
-								<div class="mb1"><h5 class="regular">E-post: regionen@regionhalland.se</h5></div>
-								<div class="mb1"><h5 class="regular">Besöksadresser</h5></div>
-								<div class="mb1"><h5 class="regular">Post- och fakturaadresser</h5></div>
-								<div class="mb1"><h5 class="regular">Övriga kontaktuppgifter</h5></div>
+								<div class="mb4">
+									<h1 class="h4" id="121212">Kontakt</h1>
+								</div>
+								<ul class="small" aria-labelledby="121212">
+									<li class="mb1"><strong id="665577">Telefon: </strong><a href="tel://46-35-134800" aria-labelledby="665577">035-13 48 00</a></li>
+									<li class="mb1"><strong id="665566">E-post:</strong> <a href="mailto:regionen@regionhalland.se" aria-labelledby="665566">regionen@regionhalland.se</a></li>
+									<li class="mb1"><a href="">Besöksadresser</a></li>
+									<li class="mb1"><a href="">Post- och fakturaadresser</a></li>
+									<li class="mb1"><a href="">Övriga kontaktuppgifter</a></li>
+								</ul>
 							</div>
 						</div>
-						<div class="col-12 lg-col-3">
+						<div class="col-12 md-col-6 lg-col-3 pb2">
 							<div class="mb3">
-								<div class="mb2"><h4>Övriga webbplatser</h4></div>
-								<div class="mb1"><h5 class="regular">www.regionhalland.se</h5></div>
-								<div class="mb1"><h5 class="regular">vardgivare.regionhalland.se</h5></div>
-								<div class="mb1"><h5 class="regular">teaterhalland.se</h5></div>
+								<div class="mb4">
+									<h1 class="h4" id="212121">Övriga webbplatser</h1>
+								</div>
+								<ul class="small" aria-labelledby="212121">
+									<li class="mb1"><a href="http://www.regionhalland.se">www.regionhalland.se</a></li>
+									<li class="mb1"><a href="http://vardgivare.regionhalland.se">vardgivare.regionhalland.se</a></li>
+									<li class="mb1"><a href="http://www.teaterhalland.se">teaterhalland.se</a></li>
+								</ul>
 							</div>
 						</div>
-						<div class="col-12 lg-col-3">
+						<div class="col-12 md-col-6 lg-col-3 pb2">
 							<div class="mb3">
-								<div class="mb2"><h4>Sociala medier</h4></div>
-								<div class="mb1"><h5 class="regular">Region Halland på Facebook</h5></div>
-								<div class="mb1"><h5 class="regular">Region Halland på Twitter</h5></div>
-								<div class="mb1"><h5 class="regular">Region Halland på Instagram</h5></div>
+								<div class="mb4">
+									<h1 class="h4" id="443322">Sociala medier</h1>
+								</div>
+								<ul class="small" aria-labelledby="443322">
+									<li class="mb1"><a href="https://sv-se.facebook.com/regionhalland/">Region Halland på Facebook</a></li>
+									<li class="mb1"><a href="https://twitter.com/regionhalland">Region Halland på Twitter</a></li>
+									<li class="mb1"><a href="https://www.instagram.com/regionhalland/?hl=sv">Region Halland på Instagram</a></li>
+								</ul>
 							</div>
 						</div>
 					</div>	
 				</div>
-			</div>
-
-			<!-- ********************* -->
-			<!-- White space at bottom -->
-			<!-- ********************* -->
-			<div class="p4">
-				&nbsp;
-			</div>
-
+			</footer>
 		</div>
 	</div>
 </div>
-<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js?ver=4.9.6'></script>
-<script type='text/javascript' src='http://vg.test/app/themes/halland/dist/scripts/main.js'></script>
-<script type='text/javascript' src='http://vg.test/wp/wp-includes/js/wp-embed.js?ver=4.9.6'></script>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js?ver=4.9.6"></script>
+<script src="http://vg.test/app/themes/halland/dist/scripts/main.js"></script>
+<script src="http://vg.test/wp/wp-includes/js/wp-embed.js?ver=4.9.6"></script>
 </body>
 </html>
