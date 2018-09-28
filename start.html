@@ -7,16 +7,21 @@
 	
 	<title>Webbplats för vårdgivare &#8211; Vårdgivare Halland</title>
 	
-	<!-- Only when working with the styleguide locally
+		<!--
+		Only when working with the styleguide locally
 		<link rel='stylesheet' id='rh-components-css' href='http://styleguide.test/dist/css/main.min.css' type='text/css' media='all' />
 		<link rel='stylesheet' id='halland/main.css-css' href='http://vg.test/app/themes/halland/dist/styles/main.css' type='text/css' media='all' />
-	 -->
-	 <!--
-	<link rel='stylesheet' id='rh-components-css' href='css/main.min.css' type='text/css' media='all' />
-	<link rel='stylesheet' id='halland/main.css-css' href='css/main.css' type='text/css' media='all' />
-	-->
-	<link rel="stylesheet" id="rh-components-css" href="https://regionhalland.github.io/styleguide/dist/css/main.min.css" type="text/css" media="all" />
- 	<link rel="stylesheet" id="halland/main.css-css" href="http://vardgivare.regionhalland.se/app/themes/halland/dist/styles/main.css" type="text/css" media="all" />
+	
+	 	<link rel='stylesheet' id='rh-components-css' href='css/main.min.css' type='text/css' media='all' />
+		<link rel='stylesheet' id='halland/main.css-css' href='css/main.css' type='text/css' media='all' />
+	
+		<link rel="stylesheet" id="rh-components-css" href="https://regionhalland.github.io/styleguide/dist/css/main.min.css" type="text/css" media="all" />
+ 		<link rel="stylesheet" id="halland/main.css-css" href="http://vardgivare.regionhalland.se/app/themes/halland/dist/styles/main.css" type="text/css" media="all" />
+    -->
+
+    <link rel='stylesheet' id='rh-components-css' href='http://styleguide.test/dist/css/main.min.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='halland/main.css-css' href='http://vg.test/app/themes/halland/dist/styles/main.css' type='text/css' media='all' />
+	
     <style>
     a:focus {
     	background-color: #CEE2F2;
@@ -39,8 +44,6 @@
 	<!-- ******************** -->
 
 	<header aria-label="sidhuvud">
-		
-		rollo
 		<!-- ************** -->
 		<!-- Top navigation -->
 		<!-- NOTE! Class "breadcrumbs" only for hide in mobile. Change to another class later -->
@@ -77,17 +80,116 @@
 		<!-- NOTE. Meny + search must be defined -->
 		<!-- ******************************** -->
 
-		<nav aria-label="hem-länk och sökfunktion" class="container mx-auto pl5 pr5 py2 flex">
-			<span style="flex:1">
-				Meny
-			</span>
-			<span style="flex-shrink: 0;">
-				<a href=""><img src="img/HomeLogo.png" alt="Direkt till förstasidan" /></a>
-			</span>
-			<span class="right-align" style="flex:1;">
-				Search
-			</span>
-		</nav>
+		<div class="col-12 flex content-stretch">
+			<div class="container mx-auto" style="width: 1320px;">
+				<div class="flex flex-wrap background-white">
+					<div class="col-12 left-align">
+						<nav class="site-nav">
+							
+							<div class="site-nav__top">
+								<div class="site-nav__container">
+									<div class="flex" style="width:100%;">
+										<div class="col-4 pt2">
+											<button class="site-nav__menu-btn">
+												<svg class="icon-badge-nav icon-badge-nav--md">
+													<use xlink:href="#menu"/>
+												</svg>
+												<span class="hidden-inline-sm">Meny</span>
+											</button>
+										</div>
+										<div class="col-8">
+											<div>
+												<img src="img/HomeLogo.png">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="site-nav__bottom">
+								<div class="site-nav__container">
+									<ul class="site-nav__list">
+										
+										<!-- Item A -->
+										<li class="site-nav__item">
+											<a href="#" onclick="return false" class="site-nav__link" ">Aaa</a>
+											<nav class="dropdown">
+												<div class="site-nav__container">
+													<ul class="dropdown__list">
+														<li class="dropdown__item">
+															<a href="" class="dropdown__link">A 0011111111</a>
+															<span class="dropdown__link-description"></span>
+														</li>
+														<li class="dropdown__item">
+															<a href="" class="dropdown__link">A 0022222222</a>
+															<span class="dropdown__link-description"></span>
+														</li>
+														<li class="dropdown__item">
+															<a href="" class="dropdown__link">A 0033333333333</a>
+															<span class="dropdown__link-description"></span>
+														</li>
+													</ul>
+												</div>
+											</nav>
+
+										</li>
+
+										<!-- Item B -->
+										<li class="site-nav__item background-white">
+										<a href="#" onclick="return false" class="site-nav__link ">Bb</a>
+											<nav class="dropdown">
+												<div class="site-nav__container">
+													<ul class="dropdown__list">
+														<li class="dropdown__item">
+															<a href="" class="dropdown__link">B 00111111111111111</a>
+															<span class="dropdown__link-description"></span>
+														</li>
+														<li class="dropdown__item">
+															<a href="" class="dropdown__link">B 0022222222222</a>
+															<span class="dropdown__link-description"></span>
+														</li>
+														<li class="dropdown__item">
+															<a href="" class="dropdown__link">B 003333333333333</a>
+															<span class="dropdown__link-description"></span>
+														</li>
+													</ul>
+												</div>
+											</nav>
+										</li>
+
+										<!-- Item C -->
+										<li class="site-nav__item background-white">
+										<a href="#" onclick="return false" class="site-nav__link ">Cc</a>
+											<nav class="dropdown">
+												<div class="site-nav__container">
+													<ul class="dropdown__list">
+														<li class="dropdown__item">
+															<a href="" class="dropdown__link">C 001111111111</a>
+															<span class="dropdown__link-description"></span>
+														</li>
+														<li class="dropdown__item">
+															<a href="" class="dropdown__link">C 0022222222222</a>
+															<span class="dropdown__link-description"></span>
+														</li>
+														<li class="dropdown__item">
+															<a href="" class="dropdown__link">C 00333333</a>
+															<span class="dropdown__link-description"></span>
+														</li>
+													</ul>
+												</div>
+											</nav>
+										</li>
+
+									</ul>
+								</div>
+							</div>
+						<!-- <div class="site-nav__overlay"></div> -->
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+
 	</header>
 
 	<!-- *************** -->
